@@ -1,48 +1,49 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 
-import Bio from '../components/Bio'
-import Layout from '../components/Layout'
-import SEO from '../components/seo'
-import { rhythm } from '../utils/typography'
+import AboutMe from '../components/AboutMe'
+import Hero from '../components/Hero'
+import SpaceshipCallout from '../components/SpaceshipCallout'
+import Projects from '../components/Projects'
 
-class BlogIndex extends React.Component {
-  render() {
-    const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
-    const posts = data.allMdx.edges
+import '../styles/shared.css';
 
-    return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO
-          title="All posts"
-          keywords={[`blog`, `gatsby`, `javascript`, `react`]}
-        />
-        <Bio />
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <div key={node.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+class Index extends React.Component {
+    render() {
+        const { data } = this.props
+
+        return (
+            <div className="page-content">
+                <Hero />
+                <AboutMe id="AboutMe"/>
+                <SpaceshipCallout id="Spaceship"/>
+                <Projects id="Projects"/>
+                <div className="footer-section" id="Contact">
+                    <h3>Contact Me</h3>
+                    <div className="social-icons">
+                        <a href="" target="_blank" className="social-icon">
+                            <i className="far fa-envelope"></i>
+                        </a>
+                        <a href="" target="_blank" className="social-icon">
+                            <i className="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="" target="_blank" className="social-icon">
+                            <i className="fab fa-github"></i>
+                        </a>
+                        <a href="" target="_blank" className="social-icon">
+                            <i className="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="" target="_blank" className="social-icon">
+                            <i className="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-          )
-        })}
-      </Layout>
-    )
-  }
+        )
+    }
 }
 
-export default BlogIndex
+export default Index
 
 export const pageQuery = graphql`
   query {

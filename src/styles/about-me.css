@@ -1,0 +1,115 @@
+.intro {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 15px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.intro .profile-photo { 
+    opacity: 0.4; 
+    max-width: 300px;
+}
+
+.intro .text-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 650px;
+    padding: 0 30px;
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+}
+
+.intro .text-cont h2 {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    padding: 0 30px;
+}
+
+.intro .text-cont p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.intro .text-cont .links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.intro .text-cont .btn {
+    border:1px solid #000;
+    padding: 15px 30px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+    margin: 15px;
+    width: 100%;
+}
+
+.intro .text-cont .btn a {
+    color: #000;
+    text-decoration: none;
+}
+
+@media (min-width: 40em) {
+    .intro .text-cont .btn {
+        width: auto;
+        font-size: 25px;
+        font-weight: 100;
+    }
+}
+
+@media (min-width: 64em) {
+    .intro {
+        max-width: 1500px;
+        margin-bottom: 100px;
+        justify-content: space-around;
+    }
+
+    .intro .profile-photo { 
+        opacity: 1; 
+        max-width: 100%;
+    }
+    
+    .intro .text-cont {
+        position: relative;
+    }
+    
+    .intro .text-cont h2 {
+        font-size: 45px;
+        line-height: 45px;
+        font-weight: 100;
+        margin-bottom: 80px;
+    }
+    
+    .intro .text-cont p {
+        font-size: 25px;
+        font-weight: 100;
+    }
+
+    .intro .text-cont .links {
+        flex-direction: column;
+        margin: 30px 0;
+    }
+
+    .intro .text-cont .btn {
+        min-width: 500px;
+    }
+}

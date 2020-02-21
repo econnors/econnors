@@ -1,0 +1,122 @@
+.hero {
+    position: relative;
+    background: url("../assets/mountain.jpg")center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50vh;
+    padding: 30px 15px;
+    margin-bottom: 30px;
+}
+
+.hero .top-nav {
+    display: none;
+}
+
+.hero .logo {
+    display: flex; 
+    z-index: 2;
+    color:#fff;
+    padding: 5px;
+}
+
+.hero .logo h1 {
+    font-size: 90px;
+    line-height: 90px;
+    font-family: 'Roboto', sans-serif;
+    color:#fff;
+    font-weight: 100;
+}
+
+.hero .title {
+    width: 100%;
+    z-index: 2;
+}
+
+.hero .title ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.hero .title ul li {
+    margin: 30px 0px;
+    padding: 0 15px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    border-right: 3px solid #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    text-shadow: 2px 2px 3px #565856;
+}
+
+.hero .title ul li:last-child {
+    border-right: none;
+}
+
+.hero .succulent-photo {
+    display: none;
+}
+
+.hero:after {
+    content:"";
+    position:absolute;
+    bottom: 0;
+    right:0;
+    background: url("../assets/succulents.jpg") center/cover no-repeat;
+}
+
+@media (min-width: 64em) {
+    .hero{
+        height: 80vh;
+        margin-bottom: 150px;
+    }
+
+    .hero .top-nav {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .hero .top-nav ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+
+    .hero .top-nav ul li a {
+        padding: 30px;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 28px;
+        line-height: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-shadow: 2px 2px 3px #565856;
+    }
+
+    .hero .logo h1 {
+        font-size: 145px;
+        line-height: 150px;
+    }
+
+    .hero .title ul li {
+        padding: 0 30px;
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .hero .succulent-photo {
+        display: block;
+        position: absolute;
+        bottom: -20%;
+        right: 60px;
+        width: 35%;
+    }
+}
