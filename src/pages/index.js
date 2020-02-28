@@ -1,12 +1,26 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
+import { Element } from "react-scroll";
 
-import AboutMe from '../components/AboutMe'
-import Hero from '../components/Hero'
-import SpaceshipCallout from '../components/SpaceshipCallout'
-import Projects from '../components/Projects'
+import AboutMe from '../components/AboutMe';
+import Hero from '../components/Hero';
+import SpaceshipCallout from '../components/SpaceshipCallout';
+import Projects from '../components/Projects';
+import WebFont from 'webfontloader';
 
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { far } from '@fortawesome/free-regular-svg-icons';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+library.add(fab,far)
 import '../styles/shared.css';
+
+WebFont.load({
+  google: {
+    families: ["Josefin+Sans:100,400,600","Roboto:100,400,700&display=swap"]
+  }
+});
 
 class Index extends React.Component {
     render() {
@@ -15,26 +29,31 @@ class Index extends React.Component {
         return (
             <div className="page-content">
                 <Hero />
-                <AboutMe id="AboutMe"/>
+                <Element name="AboutMe"><AboutMe/></Element>
                 <SpaceshipCallout id="Spaceship"/>
                 <Projects id="Projects"/>
                 <div className="footer-section" id="Contact">
                     <h3>Contact Me</h3>
+                    <form  method="POST">
+                        <input type="email" name="mail" placeholder="E-mail" required />>
+                        <input type="submit" value="Submit" />
+                        <textarea name="message" placeholder="Message..." required></textarea>
+                    </form>
                     <div className="social-icons">
                         <a href="" target="_blank" className="social-icon">
-                            <i className="far fa-envelope"></i>
+                            <FontAwesomeIcon icon={['far', 'envelope']} />
                         </a>
                         <a href="" target="_blank" className="social-icon">
-                            <i className="fab fa-linkedin-in"></i>
+                            <FontAwesomeIcon icon={['fab', 'linkedin-in']} />
                         </a>
                         <a href="" target="_blank" className="social-icon">
-                            <i className="fab fa-github"></i>
+                            <FontAwesomeIcon icon={['fab', 'github']} />
                         </a>
                         <a href="" target="_blank" className="social-icon">
-                            <i className="fab fa-facebook-f"></i>
+                            <FontAwesomeIcon icon={['fab', 'facebook-f']} />
                         </a>
                         <a href="" target="_blank" className="social-icon">
-                            <i className="fab fa-instagram"></i>
+                            <FontAwesomeIcon icon={['fab', 'instagram']} />
                         </a>
                     </div>
                 </div>
