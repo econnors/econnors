@@ -1,0 +1,4 @@
+---
+template: post
+title: test 
+---
