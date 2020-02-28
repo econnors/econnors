@@ -6,7 +6,6 @@ import AboutMe from '../components/AboutMe';
 import Hero from '../components/Hero';
 import SpaceshipCallout from '../components/SpaceshipCallout';
 import Projects from '../components/Projects';
-import WebFont from 'webfontloader';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
@@ -15,12 +14,6 @@ import { far } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 library.add(fab,far)
 import '../styles/shared.css';
-
-WebFont.load({
-  google: {
-    families: ["Josefin+Sans:100,400,600","Roboto:100,400,700&display=swap"]
-  }
-});
 
 class Index extends React.Component {
     render() {

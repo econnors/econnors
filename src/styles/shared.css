@@ -1,13 +1,5 @@
-/* 
-    fonts
-    font-family: 'Josefin Sans', sans-serif;
-    font-family: HalisGR-Medium;
-    font-family: HalisGR-SMedium;
-    font-family: HalisGR-SThin;
-    font-family: HalisGR-Thin;
-    font-family: HalisGR-Regular;
-    font-family: HalisGR-SRegular;
-*/
+/* font families */
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,400,600|Roboto:100,400,700&display=swap');
 
 /*  RESET STYLES */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,
