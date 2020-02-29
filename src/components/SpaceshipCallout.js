@@ -6,7 +6,7 @@ function SpaceshipCallout() {
         <div className="spaceship" id="spaceship">
             <h3>Project Magic Spaceship</h3>
             <div className="btn">
-                <a href="/magic-spaceship/" target="_blank">Learn More</a>
+                <a href="https://magicspaceship.org/" target="_blank">Learn More</a>
             </div>
         </div>
     )
