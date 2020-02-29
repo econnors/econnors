@@ -89,6 +89,10 @@
         list-style: none;
     }
 
+    .hero .top-nav ul li {
+        cursor: pointer;
+    }
+
     .hero .top-nav ul li a {
         padding: 30px;
         color: #fff;

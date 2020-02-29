@@ -40,19 +40,19 @@ class Index extends React.Component {
                             <textarea name="message" placeholder="Message..." required></textarea>
                         </form>
                         <div className="social-icons">
-                            <a href="" target="_blank" className="social-icon">
+                            <a href="mailto:ejconnors90@gmail.com?Subject=Hello%20Emily" target="_blank" className="social-icon">
                                 <FontAwesomeIcon icon={['far', 'envelope']} />
                             </a>
-                            <a href="" target="_blank" className="social-icon">
+                            <a href="https://www.linkedin.com/in/emilyjconnors/" target="_blank" className="social-icon">
                                 <FontAwesomeIcon icon={['fab', 'linkedin-in']} />
                             </a>
-                            <a href="" target="_blank" className="social-icon">
+                            <a href="https://github.com/emilyjconnors" target="_blank" className="social-icon">
                                 <FontAwesomeIcon icon={['fab', 'github']} />
                             </a>
-                            <a href="" target="_blank" className="social-icon">
+                            <a href="https://www.facebook.com/e.conn90" target="_blank" className="social-icon">
                                 <FontAwesomeIcon icon={['fab', 'facebook-f']} />
                             </a>
-                            <a href="" target="_blank" className="social-icon">
+                            <a href="https://www.instagram.com/e.conn90/" target="_blank" className="social-icon">
                                 <FontAwesomeIcon icon={['fab', 'instagram']} />
                             </a>
                         </div>
