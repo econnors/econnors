@@ -29,7 +29,7 @@ class Index extends React.Component {
                     <div className="footer-section" id="Contact">
                         <h3>Contact Me</h3>
                         <form name="contact" method="POST" data-netlify="true">
-                            <input type="email" name="mail" placeholder="E-mail" required />>
+                            <input type="email" name="mail" placeholder="E-mail" required />
                             <input type="submit" value="Submit" />
                             <textarea name="message" placeholder="Message..." required></textarea>
                         </form>
