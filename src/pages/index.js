@@ -22,34 +22,36 @@ class Index extends React.Component {
         return (
             <div className="page-content">
                 <Hero />
-                <Element name="AboutMe"><AboutMe/></Element>
-                <SpaceshipCallout id="Spaceship"/>
-                <Projects id="Projects"/>
-                <div className="footer-section" id="Contact">
-                    <h3>Contact Me</h3>
-                    <form  method="POST">
-                        <input type="email" name="mail" placeholder="E-mail" required />>
-                        <input type="submit" value="Submit" />
-                        <textarea name="message" placeholder="Message..." required></textarea>
-                    </form>
-                    <div className="social-icons">
-                        <a href="" target="_blank" className="social-icon">
-                            <FontAwesomeIcon icon={['far', 'envelope']} />
-                        </a>
-                        <a href="" target="_blank" className="social-icon">
-                            <FontAwesomeIcon icon={['fab', 'linkedin-in']} />
-                        </a>
-                        <a href="" target="_blank" className="social-icon">
-                            <FontAwesomeIcon icon={['fab', 'github']} />
-                        </a>
-                        <a href="" target="_blank" className="social-icon">
-                            <FontAwesomeIcon icon={['fab', 'facebook-f']} />
-                        </a>
-                        <a href="" target="_blank" className="social-icon">
-                            <FontAwesomeIcon icon={['fab', 'instagram']} />
-                        </a>
+                <Element name="AboutMe"><AboutMe /></Element>
+                <Element name="Spaceship"><SpaceshipCallout /></Element>
+                <Element name="Projects"><Projects /></Element>
+                <Element name="Contact">
+                    <div className="footer-section" id="Contact">
+                        <h3>Contact Me</h3>
+                        <form name="contact" method="POST" data-netlify="true">
+                            <input type="email" name="mail" placeholder="E-mail" required />>
+                            <input type="submit" value="Submit" />
+                            <textarea name="message" placeholder="Message..." required></textarea>
+                        </form>
+                        <div className="social-icons">
+                            <a href="" target="_blank" className="social-icon">
+                                <FontAwesomeIcon icon={['far', 'envelope']} />
+                            </a>
+                            <a href="" target="_blank" className="social-icon">
+                                <FontAwesomeIcon icon={['fab', 'linkedin-in']} />
+                            </a>
+                            <a href="" target="_blank" className="social-icon">
+                                <FontAwesomeIcon icon={['fab', 'github']} />
+                            </a>
+                            <a href="" target="_blank" className="social-icon">
+                                <FontAwesomeIcon icon={['fab', 'facebook-f']} />
+                            </a>
+                            <a href="" target="_blank" className="social-icon">
+                                <FontAwesomeIcon icon={['fab', 'instagram']} />
+                            </a>
+                        </div>
                     </div>
-                </div>
+                </Element>
             </div>
         )
     }
