@@ -43,7 +43,8 @@
 
 @media (min-width: 64em) {
     .spaceship {
-        height: 800px;
+        height: 100vh;
+        max-height: 800px;
     }
     
     .spaceship h3 {
