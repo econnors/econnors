@@ -28,8 +28,14 @@ class Index extends React.Component {
                 <Element name="Contact">
                     <div className="footer-section" id="Contact">
                         <h3>Contact Me</h3>
-                        <form name="contact" method="POST" data-netlify="true">
-                            <input type="email" name="mail" placeholder="E-mail" required />
+                        <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                            <input type="hidden" name="form-name" value="contact" />
+                            <p hidden>
+                            <label>
+                                Don’t fill this out: <input name="bot-field"/>
+                            </label>
+                            </p>
+                            <input type="email" name="email" placeholder="E-mail" required />
                             <input type="submit" value="Submit" />
                             <textarea name="message" placeholder="Message..." required></textarea>
                         </form>
