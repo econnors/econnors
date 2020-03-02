@@ -1,35 +1,5 @@
 
-/* header section */
-/* #magic-spaceship .hero {
-    background: url("../../assets/magic-spaceship.jpg")top/cover no-repeat;
-}
-
-#magic-spaceship .hero:before {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    content: "";
-    background-image: linear-gradient(to top, #000, rgba(0,0,0,0));
-    opacity: .6; 
-}
 
 
-/* body section */
 
-.body-section .content {
-    position: relative;
-    margin: 0 auto;
-    padding: 0 15px;
-    margin-bottom: 30px;
-}
-
-@media (min-width: 64em) {
-    .body-section .content {
-        max-width: 900px;
-        margin-bottom: 100px;
-        justify-content: space-around;
-    }
-}
 
