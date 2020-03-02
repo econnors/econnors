@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import '../styles/projects.css';
 import oakland from '../assets/oakland.jpg'
 import alabama from '../assets/alabama.jpg'
@@ -21,7 +22,7 @@ function Hero() {
                 </div>
             </div>
             <div className="btn">
-                <a href="/" target="_blank">See More</a>
+                <Link to="/projects">See More</Link>
             </div>
         </div>
     )
