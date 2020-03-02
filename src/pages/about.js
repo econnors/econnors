@@ -10,7 +10,7 @@ library.add(fab,far)
 import '../styles/shared.css';
 import '../styles/about-page.css';
 
-class Index extends React.Component {
+class About extends React.Component {
     render() {
         const { data } = this.props
 
@@ -69,4 +69,4 @@ class Index extends React.Component {
     }
 }
 
-export default Index
+export default About
